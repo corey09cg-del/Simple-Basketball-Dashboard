@@ -1,0 +1,352 @@
+.app {
+  min-height: 100vh;
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.title {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: #d1d5db;
+  margin-bottom: 24px;
+}
+
+.spursLogo {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  justify-content: right;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 18px;
+  background: #111827;
+  border: 1px solid #374151;
+  box-shadow: 0 16px 40px rgba(0, 0, 0.35);
+  margin-bottom: 24px;
+}
+
+.team {
+  flex: 1;
+  text-align: center;
+  border-radius: 20px;
+  padding: 14px 16px;
+  border-color: #98a1af;
+}
+
+.teamScore {
+  font-size: 56px;
+  font-weight: 900;
+  color: #d1d5db;
+}
+
+.gameStatus {
+  text-align: center;
+  min-width: 160px;
+  border: none;
+  border-radius: 24px;
+  background: #eff2f5;
+  padding: 13px 20px;
+}
+
+.gameClock {
+  color:#111827;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.quarter {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status {
+  color: #1f2937;
+}
+
+.message {
+  color: #1f2937;
+  font-weight: 300;
+}
+
+.resetGame {
+  padding: 6px 7px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  size: larger;
+  background: red;
+  margin-left: 10px;
+}
+
+.nextQuarter {
+  padding: 6px 7px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  size: larger;
+  margin-left: 10px;
+}
+
+.clockButtonRow {
+  margin-top: 12px;
+  gap: 5px;
+}
+
+.clockButton {
+  padding: 6px 7px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  size: larger;
+  margin-left: 10px;
+}
+
+.addToScore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+  justify-content: center;
+}
+
+.foulButton {
+  padding: 4px 7px;
+  border: 1px solid #4b5563;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  size: larger;
+  font-weight: 500;
+  background: rgb(199, 199, 66);
+}
+
+.scoreboardButton {
+  padding: 9px 12px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  size: larger;
+  font-weight: 500;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.rightSidePanel {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1c2438;
+}
+
+.playerSelector {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.playerSelectorTitle {
+  color: #d1d5db;
+}
+
+.playerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+  height: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1c2438;
+  color:#f9fafb;
+  text-align: left;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.playerButton {
+  padding: 12px 14px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  background: #1f2937;
+  color: #f9fafb;
+  cursor: pointer;
+  text-align: left;
+  size: larger;
+  cursor: pointer;
+}
+
+.playerButton:hover {
+  background-color: #d1d5db;
+}
+
+.playerButton.active {
+  background: #f9fafb;
+  color: #111827;
+  font-weight: 800;
+}
+
+.playerCard {
+  padding: 20px;
+  border-radius: 18px;
+  background: #f9fafb;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.playerCardName {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.playerCardInfo {
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+
+.statBoxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.statBox {
+  padding: 16px;
+  text-align: center;
+  border-radius: 12px;
+  background: #e5e7eb;
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #4b5563;
+}
+.statValueSummary {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.statLabelSummary {
+  font-size: 20px;
+  color: #4b5563;
+}
+
+.statsControls {
+  margin-top: 20px;
+}
+
+.statsControlHeader {
+  justify-content: left;
+  color: #e5e7eb;
+}
+
+.statButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+  justify-content: center;
+}
+
+.statButton {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.undo {
+  padding: 6px 7px;
+  border: none;
+  border-radius: 4px;
+  background: #cc8a27;
+  color: #272011;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.statButton:hover {
+  background: #d1d5db;
+}
+
+.teamSummary {
+  padding: 24px;
+  border-radius: 18px;
+  background: #f9fafb;
+  color: #111827;
+  margin-top: 24px;
+}
+
+
+.summaryBoxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.summaryText {
+  text-align: left;
+  padding: 10px;
+}
+
+.playerButton.active {
+  background: #f9fafb;
+  color: #111827;
+  font-weight: 800;
+}
+
+.playerButton.leading {
+  border: 2px solid gold;
+  color: gold;
+}
+
+.playerButton.active.leading {
+  border: 2px solid gold;
+  background: gold;
+  color: #111827;
+}
